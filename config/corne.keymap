@@ -20,31 +20,28 @@
     };
 
     behaviors {
-        ss_hs_modmorph: ss_hs_modmorph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SS_HS_MODMORPH";
-            bindings = <&kp M>, <&kp RIGHT_BRACKET>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        kh_hs_tapdance: kh_hs_tapdance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "KH_HS_TAPDANCE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
-        };
-
-        hrm: hrm {
+        lh_pht: home_row_left_mod_tap {
             compatible = "zmk,behavior-hold-tap";
+            label = "LH_PHT";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
+
+            tapping-term-ms = <150>;
+            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <18 19 20 21 23 22>;
+        };
+
+        rh_pht: home_row_right_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RH_PHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <12 13 14 15 16 17>;
         };
     };
 
