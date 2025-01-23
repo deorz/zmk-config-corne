@@ -26,10 +26,10 @@
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <100>;
             quick-tap-ms = <200>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <18 19 20 21 23 22 6 7 8 9 10 11 30 31 32 33 34 35>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <18 19 20 21 23 22 6 7 8 9 10 11 30 31 32 33 34 35 39 40 41 36>;
         };
 
         rh_pht: home_row_right_mod_tap {
@@ -38,10 +38,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <100>;
             quick-tap-ms = <200>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <12 13 14 15 16 17 0 1 2 3 4 5 24 25 26 27 28 29>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <12 13 14 15 16 17 0 1 2 3 4 5 24 25 26 27 28 29 38 37 36 41>;
         };
     };
 
@@ -72,8 +72,8 @@
 
             bindings = <
 &trans  &kp N1    &kp N2      &kp N3      &kp N4   &kp N5             &kp N6          &kp N7     &kp N8     &kp N9            &kp N0             &trans
-&trans  &kp HOME  &kp INSERT  &kp DELETE  &kp END  &trans             &kp MINUS       &kp EQUAL  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&trans  &trans    &trans      &trans      &trans   &kp PRINTSCREEN    &kp UNDERSCORE  &kp PLUS   &trans     &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
+&trans  &kp HOME  &kp INSERT  &kp DELETE  &kp END  &trans             &kp MINUS       &kp EQUAL  &kp TILDE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&trans  &trans    &trans      &trans      &trans   &kp PRINTSCREEN    &kp UNDERSCORE  &kp PLUS   &kp GRAVE  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
                               &trans      &trans   &trans             &trans          &mo 0      &trans
             >;
         };
