@@ -27,8 +27,8 @@
             bindings = <&kp>, <&kp>;
 
             tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            flavor = "tap-unless-interrupted";
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
             hold-trigger-key-positions = <18 19 20 21 23 22 6 7 8 9 10 11 30 31 32 33 34 35 39 40 41 36>;
         };
 
@@ -39,8 +39,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            flavor = "tap-unless-interrupted";
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
             hold-trigger-key-positions = <12 13 14 15 16 17 0 1 2 3 4 5 24 25 26 27 28 29 38 37 36 41>;
         };
     };
